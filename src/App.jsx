@@ -35,7 +35,7 @@ function App() {
                 <Route path="/mantenimiento" element={<Mantenimiento />} />
                 <Route path="/consultoria" element={<Consultoria />} />
                 <Route path="/nutricion" element={<NutricionAnimal />} />
-                <Route path="/agroexp" element={<Agroexp />} />
+                <Route path="/agroexportacion" element={<Agroexp />} />
                 
             </Routes>
           </main>

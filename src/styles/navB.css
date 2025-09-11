@@ -5,6 +5,7 @@ background-color: #273469;
 position: sticky; 
 top: 0; 
 z-index: 1000; /* por sobre el contenido */ 
+padding: 0 2.5rem;
 
 display: flex;
 justify-content: space-between; /* espacio entre elementos extremos */ 
@@ -37,7 +38,7 @@ cursor: pointer;
 
 
 .navB #logo img {
-  height: 70px;           /* tamaño real del logo */        
+  height: 65px;           /* tamaño real del logo */        
 }
 
 .navB a {
@@ -59,13 +60,14 @@ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
 
 
 
+
 /* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdownContent {
   position: absolute;
   top: 100%;
   left: 0;
@@ -78,26 +80,28 @@ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  visibility: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
 }
 
-.dropdown:hover .dropdown-content {
-  /* display: flex;  <-- ya no se usa */
+.dropdown:hover .dropdownContent,
+.dropdownContent:hover {
   opacity: 1;
   transform: scaleY(1);
-  visibility: visible;
+  pointer-events: auto; 
 }
 
+
 /* botones dentro del dropdown */
-.dropdown-content button {
+.dropdownContent button {
   width: 100%;
+  font-size: medium;
   text-align: left;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   background: transparent;
   border: none;
 }
 
-.dropdown-content button:hover {
+.dropdownContent button:hover {
   background: #ffffff44;
 }
