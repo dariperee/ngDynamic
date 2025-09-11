@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Contact = () =>{
+    
+    useEffect(() => {document.title = "Contacto | NG Dynamic";}, []);
+
     return(<>
         <h2>Contacto</h2>
 

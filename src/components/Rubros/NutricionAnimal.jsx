@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const NutricionAnimal = () =>{
+
+    useEffect(() => {document.title = "Nutrición Animal | NG Dynamic";}, []);
+
     return(<>
         <h2>Nutricion Animal</h2>
 

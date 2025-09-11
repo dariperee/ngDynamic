@@ -1,21 +1,41 @@
 /* Navbar A*/
 .navA {
-  width: 100%;
-  background-color: #1E2749;
-  color: white;
-  padding: 0.5rem;
-  position: sticky;
-  z-index: 999; /* para que quede encima del contenido */
+width: 100%;
+background-color: #1E2749;
+color: white;
+padding: 0.3rem 1.2rem; /* 0.5 arriba/abajo, 2rem a los costados */
+z-index: 999; /* para que quede encima del contenido */
 
+display: flex;               /* activa flexbox */
+justify-content: space-between; /* pone espacio entre elementos extremos */
+align-items: center;         /* centra verticalmente */
+}
 
-  display: flex;               /* activa flexbox */
-  justify-content: start; /* pone espacio entre elementos extremos */
-  align-items: center;         /* centra verticalmente */
+#iconsA {
+display: flex;
+gap: 0.6rem; /* espacio entre íconos */
+}
+
+#dropA {
+display: flex;
+}
+
+.icons {
+display: inline-block;
+color: white; 
+cursor: pointer;
+font-size: 1rem;
+transition: 0.3s ease, transform 0.2s ease;
 }
 
 
-.ico svg {
-  width: 30px;
-  height: 30px;
-  display: block; /* elimina espacios extra */
+
+#iconsA a {
+  text-decoration: none; 
 }
+
+.icons:hover {
+  transform: scale(1.2); 
+}
+
+

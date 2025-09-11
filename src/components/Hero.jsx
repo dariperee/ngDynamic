@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Hero = () => {
+
+  useEffect(() => {document.title = "Home | NG Dynamic";}, []);
+
   return (
     <section id="hero">
         <h1>NG Dynamic</h1>

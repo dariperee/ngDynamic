@@ -1,4 +1,6 @@
 import './styles/App.css'
+
+// Componentes
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 import NavbarA from './components/NavbarA'
@@ -15,6 +17,7 @@ import Agroexp from './components/Rubros/Agroexp'
 
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
   return (

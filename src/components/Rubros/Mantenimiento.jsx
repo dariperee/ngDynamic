@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Mantenimiento = () =>{
+
+    useEffect(() => {document.title = "Mantenimiento| NG Dynamic";}, []);
+
     return(<>
         <h2>Mantenimiento</h2>
 

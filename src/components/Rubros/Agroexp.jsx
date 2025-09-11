@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Agroexp = () =>{
+
+    useEffect(() => {document.title = "Agroexportación | NG Dynamic";}, []);
+
     return(<>
         <h2>Agropecuaria y exportacion</h2>
 

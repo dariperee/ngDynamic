@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Consultoria = () =>{
+    
+    useEffect(() => {document.title = "Consultoría | NG Dynamic";}, []);
+    
     return(<>
         <h2>Consultoría</h2>
 

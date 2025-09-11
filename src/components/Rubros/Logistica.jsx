@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Logistica = () =>{
+
+    useEffect(() => {document.title = "Logística | NG Dynamic";}, []);
+
     return(<>
         <h2>Logística</h2>
         <p>Áreas de acción principales: Logística, transporte y distribución: Contamos con la capacidad operativa para el traslado 
