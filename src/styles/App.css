@@ -1,0 +1,11 @@
+/* Hacemos que la app ocupe toda la altura de la ventana */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* para que footer quede al final */
+}
+
+/* main crece para ocupar espacio disponible */
+main {
+  flex: 1;
+}

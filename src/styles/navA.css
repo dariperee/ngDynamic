@@ -1,0 +1,21 @@
+/* Navbar A*/
+.navA {
+  width: 100%;
+  background-color: #1E2749;
+  color: white;
+  padding: 0.5rem;
+  position: sticky;
+  z-index: 999; /* para que quede encima del contenido */
+
+
+  display: flex;               /* activa flexbox */
+  justify-content: start; /* pone espacio entre elementos extremos */
+  align-items: center;         /* centra verticalmente */
+}
+
+
+.ico svg {
+  width: 30px;
+  height: 30px;
+  display: block; /* elimina espacios extra */
+}
