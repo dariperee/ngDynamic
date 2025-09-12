@@ -6,71 +6,56 @@ import 'swiper/css/navigation';
 import 'swiper/css/parallax';
 
 import agroexportacion from "../assets/agroexportacion.jpg";
-import logistica from "../assets/logistica1.jpg";
 import catering from "../assets/catering.jpg";
+import ingeniera from "../assets/ingeniera.jpg";
+import main from "../assets/main.jpg";
+import waifu from "../assets/waifu.jpg";
 
 import "../styles/heroParalaxx.css"; // estilos separados
 
 export default function HeroParallax() {
   return (
-    <section className="hero-parallax">
-      <Swiper
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
-        speed={800}
-        parallax={true}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Parallax, Pagination, Navigation, Autoplay]}
-        className="mySwiperParallax"
-      >
+
+    <section id="hero-parallax">
+
+      <Swiper speed={800} parallax={true}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
+      modules={[Parallax, Pagination, Navigation, Autoplay]}
+      className="mySwiperParallax">
+
         {/* Slide 1 */}
         <SwiperSlide>
-          <div
-            className="parallax-bg"
-            style={{ backgroundImage: `url(${agroexportacion})` }}
-            data-swiper-parallax="-23%"
-          ></div>
-          <div className="title" data-swiper-parallax="-300">
-            Agroexportación
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Producción y calidad
+          <div className="parallax-bg" 
+          style={{backgroundImage: `linear-gradient(to right, rgba(9, 94, 206, 0.56), rgba(0, 0, 0, 0.53)), url(${ingeniera})`}}  
+          data-swiper-parallax="-0%"></div>
+          <div className="slide-content">
+            <div className="title" data-swiper-parallax="-2000">Líderes en soluciones integrales para empresas</div>
+            <div className="subtitle" data-swiper-parallax="-3000">Somos NG Dynamic</div>
           </div>
         </SwiperSlide>
 
         {/* Slide 2 */}
         <SwiperSlide>
-          <div
-            className="parallax-bg"
-            style={{ backgroundImage: `url(${logistica})` }}
-            data-swiper-parallax="-23%"
-          ></div>
-          <div className="title" data-swiper-parallax="-300">
-            Logística
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Transporte y eficiencia
+          <div className="parallax-bg" 
+          style={{backgroundImage: `linear-gradient(to right, rgba(9, 94, 206, 0.56), rgba(0,0,0,0.53)), url(${agroexportacion})`}}  
+          data-swiper-parallax="-0%"></div>
+          <div className="slide-content">
+            <div className="title" data-swiper-parallax="-2000">Agroexportación</div>
+            <div className="subtitle" data-swiper-parallax="-3000">Transporte y eficiencia</div>
           </div>
         </SwiperSlide>
 
-        {/* Slide 3 */}
+           {/* Slide 3 */}
         <SwiperSlide>
-          <div
-            className="parallax-bg"
-            style={{ backgroundImage: `url(${catering})` }}
-            data-swiper-parallax="-23%"
-          ></div>
-          <div className="title" data-swiper-parallax="-300">
-            Catering
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Eventos y servicio
+          <div className="parallax-bg" 
+          style={{backgroundImage: `linear-gradient(to right, rgba(9, 94, 206, 0.56), rgba(0,0,0,0.53)), url(${catering})`}}  
+          data-swiper-parallax="-0%"></div>
+          <div className="slide-content">
+            <div className="title" data-swiper-parallax="-2000">Catering</div>
+            <div className="subtitle" data-swiper-parallax="-3000">Mi cabeza...</div>
           </div>
         </SwiperSlide>
+ 
       </Swiper>
     </section>
   );

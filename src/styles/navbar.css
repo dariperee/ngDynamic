@@ -6,7 +6,7 @@ position: sticky;
 top: 0; 
 z-index: 1000; /* por sobre el contenido */ 
 padding: 0 2.5rem;
-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.486);
 
 display: flex;
 justify-content: space-between; /* espacio entre elementos extremos */ 
