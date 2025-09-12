@@ -3,8 +3,7 @@ import './styles/App.css'
 // Componentes
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-import NavbarA from './components/NavbarA'
-import NavbarB from './components/NavbarB'
+import Navbar from './components/Navbar'
 import About from './components/About'
 import Contact from './components/Contact'
 
@@ -15,7 +14,7 @@ import Consultoria from './components/Rubros/Consultoria'
 import NutricionAnimal from './components/Rubros/NutricionAnimal'
 import Agroexp from './components/Rubros/Agroexp'
 
-
+// Módulos
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
@@ -23,19 +22,18 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <NavbarA />
-        <NavbarB />
+        <Navbar/>
           <main>
             <Routes>
-                <Route path="/" element={<Hero />} />
-                <Route path="/nosotros" element={<About />} />
-                <Route path="/contacto" element={<Contact />} />
+                <Route path="/" element={<Hero/>}/>
+                <Route path="/nosotros" element={<About/>}/>
+                <Route path="/contacto" element={<Contact/>}/>
 
-                <Route path="/logistica" element={<Logistica />} />
-                <Route path="/mantenimiento" element={<Mantenimiento />} />
-                <Route path="/consultoria" element={<Consultoria />} />
-                <Route path="/nutricion" element={<NutricionAnimal />} />
-                <Route path="/agroexportacion" element={<Agroexp />} />
+                <Route path="/logistica" element={<Logistica/>}/>
+                <Route path="/mantenimiento" element={<Mantenimiento/>}/>
+                <Route path="/consultoria" element={<Consultoria/>}/>
+                <Route path="/nutricion" element={<NutricionAnimal/>}/>
+                <Route path="/agroexportacion" element={<Agroexp/>}/>
                 
             </Routes>
           </main>

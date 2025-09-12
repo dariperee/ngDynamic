@@ -1,0 +1,137 @@
+/* Navbar B*/ 
+.navbar { 
+width: 100%; 
+background-color: white; 
+position: sticky; 
+top: 0; 
+z-index: 1000; /* por sobre el contenido */ 
+padding: 0 2.5rem;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+
+display: flex;
+justify-content: space-between; /* espacio entre elementos extremos */ 
+align-items: stretch;
+} 
+
+
+.navbar button {
+color: black;
+background: transparent;
+border: none;
+height: 100%;       /* <-- mantiene altura completa del navbar */
+padding: 0 1.5rem;
+cursor: pointer;  
+transition: all 0.5s ease;
+display: flex;       /* <-- para centrar el texto verticalmente */
+align-items: center;
+}
+
+
+.navbar #logo {
+height: 100%;          
+padding: 0 1rem;   
+
+display: flex;          /* flex para centrar la imagen */
+align-items: center;    
+
+transition: all 0.5s ease;  /* hover props */
+cursor: pointer;
+}
+
+
+.navbar #logo img {
+height: 65px;           /* tamaño real del logo */        
+}
+
+.navbar a {
+text-decoration: none;  /* ignora estilos link */
+}
+
+
+/*nav icons */
+#navIcons {
+display: flex;
+gap: 0.6rem;
+align-items: center;
+}
+
+#navIcons a {
+text-decoration: none; 
+}
+
+.icons {
+display: inline-block;
+color: black; 
+cursor: pointer;
+font-size: 0.8rem;
+transition: 0.7s ease, transform 0.5s ease;
+}
+
+.icons:hover {
+color: #1150da;
+transform: scale(1.4); 
+}
+
+
+/* Hover */
+.navbar button:hover { 
+background: #4192ee; 
+color: white;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+} 
+
+.navbar #logo:hover { 
+background: #ffffff22;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Dropdown */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdownContent {
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #4192ee ;
+flex-direction: column;
+min-width: 150px;
+box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+z-index: 1001;
+
+opacity: 0;
+transform: scaleY(0);
+transform-origin: top;
+transition: transform 0.5s ease, opacity 0.5s ease;
+pointer-events: none;
+}
+
+.dropdown:hover .dropdownContent,
+.dropdownContent:hover {
+opacity: 1;
+transform: scaleY(1);
+pointer-events: auto; 
+}
+
+
+/* botones dentro del dropdown */
+.dropdownContent button {
+width: 100%;
+font-size: medium;
+text-align: left;
+padding: 0.5rem 0.5rem;
+background: transparent;
+border: none;
+}
+
+.dropdownContent button:hover {
+background: #ffffff44;
+}
+
+
+
+
