@@ -121,6 +121,7 @@ pointer-events: auto;
 /* botones dentro del dropdown */
 .dropdownContent button {
 width: 100%;
+color: white;
 font-size: medium;
 text-align: left;
 padding: 0.5rem 0.5rem;
