@@ -26,13 +26,13 @@ const Hero = () => {
         transporte, sino la seguridad y la integridad de cada operación, respaldados por un equipo altamente capacitado y 
         recursos de primer nivel.</p>
 
-      {/*Swiper 1, estilo pagination solo con imagenes pasando automatica o manualmente*/}
+      {/*Swiper 1, estilo pagination solo con imagenes pasando automatica o manualmente
       <Swiper modules={[Autoplay, Pagination, Navigation]}
       autoplay={{delay: 2500,disableOnInteraction: false,}} className="mySwiper">
           <SwiperSlide><img src={agroexportacion} alt="agroexportacion" /></SwiperSlide>
           <SwiperSlide><img src={catering} alt="catering" /></SwiperSlide>
           <SwiperSlide><img src={logistica} alt="logistica" /></SwiperSlide>
-      </Swiper>
+      </Swiper>*/}
 
 
       {/*Swiper 2, estilo parallax, imagenes con texto*/}
