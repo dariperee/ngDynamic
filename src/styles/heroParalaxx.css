@@ -1,6 +1,6 @@
 #hero-parallax {
-  width: 90%;
-  height: 60%; /* ocupa toda la pantalla */
+  width: 100%;
+  height: 100%; /* ocupa toda la pantalla */
 }
 
 
@@ -22,25 +22,32 @@
 }
 
 .slide-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* empieza desde arriba */
-  height: auto;                /* deja que el contenido tenga su altura */
-  padding-top: 50px;           /* margen desde el top */
-  max-height: 50%;             /* opcional, asegura que no pase de la mitad */
-  box-sizing: border-box;
+  position: absolute;      /* posiciona el bloque sobre la slide */
+  top: 50%;                /* lo centramos verticalmente respecto al slide */
+  left: 5%;                /* margen desde la izquierda */
+  transform: translateY(-50%); /* centrado vertical del bloque, no del texto */
+  max-width: 50%;          /* limita el ancho del bloque */
+  display: block;          /* que el texto se apile naturalmente */
 }
 
-
 .mySwiperParallax .title {
-  font-size: large;
+  font-size: 3rem;
   font-weight: bold;
   color: #fff;
   margin: 20px;
+  text-align: left;
 }
 
 .mySwiperParallax .subtitle {
   font-size: 24px;
   color: #ddd;
   margin: 20px;
+  text-align: left;
+}
+
+.mySwiperParallax a {
+  font-size: 24px;
+  color: #ddd;
+  margin: 20px;
+  text-align: left;
 }
