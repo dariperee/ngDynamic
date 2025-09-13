@@ -1,0 +1,42 @@
+#heroInformation {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 10rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#heroInfoB {
+  display: flex;
+  align-items: flex-start; /* que el contenido quede alineado arriba */
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  gap: 2rem; /* espacio entre texto e imágenes */
+}
+
+#heroInfoB .heroPtext {
+  display: flex;
+  flex-direction: column; /* apila verticalmente */
+  padding: 1rem;
+}
+
+#heroInfoB img {
+  width: 100%; /* ocupa toda la columna */
+  height: 100%; /* o auto si querés mantener proporción */
+  object-fit: cover; /* recorta para llenar el espacio */
+  border-radius: 0.7rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.541);
+}
+
+.heroPimg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.7rem; /* espacio entre imágenes */
+}
+
+.heroPtext p,
+.heroPtext h1,
+.heroPtext h2,
+.heroPtext h4 {
+  text-align: left; /* opcional, para reforzar */
+}
