@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "../styles/hero.css";
 
 import ParallaxSlider from "./ParallaxSlider";
+import ExperienceSection from "./ExperienceSection";
 import Presentation from "./Presentation";
 import Information from "./Information";
 

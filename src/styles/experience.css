@@ -1,0 +1,23 @@
+#experience {
+  display: flex;
+  align-items: center;
+}
+
+#visuals {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+#box {
+  background-color: aqua;
+}
+
+#visuals img {
+  width: 20%;
+  z-index: 2;
+}
+
+#text {
+  flex: 1;
+}
