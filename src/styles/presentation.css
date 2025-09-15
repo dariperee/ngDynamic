@@ -4,24 +4,41 @@
   align-items: center;
   width: 100%;
   gap: 0.5rem;
-  background: linear-gradient(to left, rgba(38, 122, 248, 0.61), rgba(183, 247, 255, 0.596));
+  background: linear-gradient(to top, rgba(22, 115, 255, 0.219), rgba(255, 255, 255, 0.596));
 }
 
 #heroPresentationContent {
   padding: 4rem;
+
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 1s ease-out;
+}
+
+#heroPresentationContent.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #heroPresentationContent h1 {
   font-size: 2.7rem;
-  color: white;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
   border-color: black;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
 }
 
 #heroPresentationContent p {
   font-size: 1.2rem;
   line-height: 2;
-  color: rgba(112, 112, 112, 0.507);
+  color: rgba(0, 0, 0, 0.829);
+  letter-spacing: 0.3px;
+}
+
+#heroPresentationContent i {
+  font-weight: 450;
+  font-size: 2.7rem;
   border-color: black;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
 }

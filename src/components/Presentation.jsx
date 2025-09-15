@@ -1,7 +1,30 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/presentation.css";
+import { useEffect } from "react";
 
 const Presentation = () => {
+  useEffect(() => {
+    const content = document.querySelector("#heroPresentationContent");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // solo se anima una vez
+          }
+        });
+      },
+      { threshold: 0.1 } // cuando el 10% del bloque esté visible
+    );
+
+    if (content) observer.observe(content);
+
+    return () => {
+      if (content) observer.unobserve(content);
+    };
+  }, []);
+
   return (
     <>
       <section id="heroPresentation">

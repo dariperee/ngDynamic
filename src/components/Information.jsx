@@ -18,7 +18,7 @@ const Information = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = Array.from(rubros).indexOf(entry.target);
-            entry.target.style.transitionDelay = `${index * 0.2}s`; // 0.2s entre cada rubro
+            entry.target.style.transitionDelay = `${index * 0.5}s`;
             entry.target.classList.add("show");
             observer.unobserve(entry.target);
           }
@@ -36,7 +36,7 @@ const Information = () => {
 
   return (
     <section id="heroInformation">
-      <h1>Servicios integrales para la gestión y mejora continua de su empresa</h1>
+      <h1>Servicios integrales que ofrecemos para la mejora continua de su empresa</h1>
 
       <section id="miniRubros">
         <div className="rubro">
