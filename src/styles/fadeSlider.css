@@ -1,0 +1,12 @@
+.mySwiperFade {
+  width: 100%;
+  height: 300px; /* altura fija y razonable */
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.603);
+}
+
+.mySwiperFade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* recorta y ajusta la imagen */
+}

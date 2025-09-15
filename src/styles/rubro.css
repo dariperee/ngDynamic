@@ -1,0 +1,25 @@
+#rubrosIndividuales {
+  display: flex;
+  flex-direction: column;
+}
+
+#rubroMain {
+  display: flex;
+  align-items: center; /* centra verticalmente texto y slider */
+  justify-content: space-between;
+  padding: 4rem;
+  gap: 1rem;
+}
+
+#rubroHeader {
+  flex: 1;
+}
+
+#rubroSlider {
+  flex: 1;
+  max-width: 500px;
+}
+
+#rubroData {
+  padding: 1rem;
+}

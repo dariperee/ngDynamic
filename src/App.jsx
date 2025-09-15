@@ -8,13 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Scroll from "./components/Scroll";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-
-// Rubros
-import Logistica from "./components/Rubros/Logistica";
-import Mantenimiento from "./components/Rubros/Mantenimiento";
-import Consultoria from "./components/Rubros/Consultoria";
-import NutricionAnimal from "./components/Rubros/NutricionAnimal";
-import Agroexp from "./components/Rubros/Agroexp";
+import Rubro from "./components/Rubro";
 
 // Módulos
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -32,11 +26,11 @@ function App() {
             <Route path="/nosotros" element={<About />} />
             <Route path="/contacto" element={<Contact />} />
 
-            <Route path="/logistica" element={<Logistica />} />
-            <Route path="/mantenimiento" element={<Mantenimiento />} />
-            <Route path="/consultoria" element={<Consultoria />} />
-            <Route path="/nutricion" element={<NutricionAnimal />} />
-            <Route path="/agroexportacion" element={<Agroexp />} />
+            <Route path="/logistica" element={<Rubro />} />
+            <Route path="/mantenimiento" element={<Rubro />} />
+            <Route path="/consultoria" element={<Rubro />} />
+            <Route path="/nutricion" element={<Rubro />} />
+            <Route path="/agroexportacion" element={<Rubro />} />
           </Routes>
         </main>
         <Footer />
