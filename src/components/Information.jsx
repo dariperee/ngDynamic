@@ -1,12 +1,12 @@
 import "../styles/information.css";
-import logistica from "../assets/rubrosIcons/logistica.png";
-import agronomia from "../assets/rubrosIcons/agronomia.png";
-import limpieza from "../assets/rubrosIcons/limpieza.png";
-import consultoria from "../assets/rubrosIcons/consultoria.png";
-import catering from "../assets/rubrosIcons/catering.png";
-import nutricion from "../assets/rubrosIcons/nutricion.png";
-import seguridad from "../assets/rubrosIcons/seguridad.png";
-import mineria from "../assets/rubrosIcons/mineria.png";
+import logistica from "../assets/hero-icons/logistica.png";
+import agronomia from "../assets/hero-icons/agronomia.png";
+import limpieza from "../assets/hero-icons/limpieza.png";
+import consultoria from "../assets/hero-icons/consultoria.png";
+import catering from "../assets/hero-icons/catering.png";
+import nutricion from "../assets/hero-icons/nutricion.png";
+import seguridad from "../assets/hero-icons/seguridad.png";
+import mineria from "../assets/hero-icons/mineria.png";
 import { useEffect } from "react";
 
 const Information = () => {
@@ -18,7 +18,7 @@ const Information = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = Array.from(rubros).indexOf(entry.target);
-            entry.target.style.transitionDelay = `${index * 0.5}s`;
+            entry.target.style.transitionDelay = `${index * 0.2}s`;
             entry.target.classList.add("show");
             observer.unobserve(entry.target);
           }
@@ -34,9 +34,33 @@ const Information = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const content = document.querySelector("#infoTitle");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // solo se anima una vez
+          }
+        });
+      },
+      { threshold: 0.1 } // cuando el 10% del bloque esté visible
+    );
+
+    if (content) observer.observe(content);
+
+    return () => {
+      if (content) observer.unobserve(content);
+    };
+  }, []);
+
   return (
     <section id="heroInformation">
-      <h1>Servicios integrales que ofrecemos para la mejora continua de su empresa</h1>
+      <h1 id="infoTitle">
+        Servicios integrales que ofrecemos para la mejora continua de su empresa
+      </h1>
 
       <section id="miniRubros">
         <div className="rubro">

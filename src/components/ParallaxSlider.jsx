@@ -36,7 +36,7 @@ export default function ParallaxSlider() {
           ></div>
           <div className="slide-content">
             <div className="title" data-swiper-parallax="-2000">
-              Versatilidad que transforma.
+              Versatilidad que transforma
             </div>
             <div className="subtitle" data-swiper-parallax="-3000">
               Somos NG Dynamic.

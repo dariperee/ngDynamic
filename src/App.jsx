@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Scroll from "./components/Scroll";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 // Rubros
 import Logistica from "./components/Rubros/Logistica";
@@ -22,6 +23,7 @@ function App() {
   return (
     <Router>
       <Scroll />
+      <ScrollToTopButton />
       <div className="app">
         <Navbar />
         <main>
