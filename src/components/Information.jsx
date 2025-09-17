@@ -8,6 +8,7 @@ import nutricion from "../assets/hero-icons/nutricion.png";
 import seguridad from "../assets/hero-icons/seguridad.png";
 import mineria from "../assets/hero-icons/mineria.png";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Information = () => {
   useEffect(() => {
@@ -65,7 +66,9 @@ const Information = () => {
       <section id="miniRubros">
         <div className="rubro">
           <div className="rubroIco">
-            <img src={logistica} alt="logistica" />
+            <Link to="/rubros/logistica" className="navLink">
+              <img src={logistica} alt="logistica" />
+            </Link>
           </div>
           <div className="rubroInfo">
             <h5>Logistica</h5>
@@ -78,7 +81,9 @@ const Information = () => {
 
         <div className="rubro">
           <div className="rubroIco">
-            <img src={agronomia} alt="agronomia" />
+            <Link to="/rubros/agropecuaria" className="navLink">
+              <img src={agronomia} alt="agronomia" />
+            </Link>
           </div>
           <div className="rubroInfo">
             <h5>Agronomia</h5>
@@ -91,7 +96,9 @@ const Information = () => {
 
         <div className="rubro">
           <div className="rubroIco">
-            <img src={limpieza} alt="limpieza" />
+            <Link to="/rubros/servicios" className="navLink">
+              <img src={limpieza} alt="limpieza" />
+            </Link>
           </div>
           <div className="rubroInfo">
             <h5>Limpieza</h5>
@@ -101,7 +108,9 @@ const Information = () => {
 
         <div className="rubro">
           <div className="rubroIco">
-            <img src={consultoria} alt="consultoria" />
+            <Link to="/rubros/consultoria" className="navLink">
+              <img src={consultoria} alt="consultoria" />
+            </Link>
           </div>
           <div className="rubroInfo">
             <h5>Consultoria</h5>
@@ -114,7 +123,9 @@ const Information = () => {
 
         <div className="rubro">
           <div className="rubroIco">
-            <img src={catering} alt="catering" />
+            <Link to="/rubros/servicios" className="navLink">
+              <img src={catering} alt="catering" />
+            </Link>
           </div>
           <div className="rubroInfo">
             <h5>Catering</h5>
@@ -127,7 +138,9 @@ const Information = () => {
 
         <div className="rubro">
           <div className="rubroIco">
-            <img src={nutricion} alt="nutricion" />
+            <Link to="/rubros/nutricion" className="navLink">
+              <img src={nutricion} alt="nutricion" />
+            </Link>
           </div>
           <div className="rubroInfo">
             <h5>Nutricion Animal</h5>

@@ -15,15 +15,17 @@
 }
 
 #rubroPage p {
-  font-size: 0.7rem;
-  line-height: 1.3rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
   text-align: start;
+  padding-top: 0.5rem;
 }
 
 #rubroPage li {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
   text-align: start;
+  padding-top: 0.5rem;
 }
 
 #rubroA {
@@ -64,15 +66,108 @@
   min-width: 500px;
 }
 
+/* Misión y visión */
+#misionYvision {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+#misionYvision h2 {
+  font-size: 1.5rem;
+  color: #0c4dff;
+  padding: 0;
+}
+
+#misionYvision p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  padding: 0;
+}
+
+/* Frase motivacional */
 #fraseMotivacional {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.2rem;
+  padding: 3rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
 }
 
 #fraseMotivacional h2 {
+  color: #0c4dffd2;
+  font-size: 1.4rem;
+  font-weight: 600;
   text-align: center;
-  color: rgba(12, 77, 255, 0.836);
-  text-shadow: 1rem;
+}
+
+/* Botones de contacto */
+#contactIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+#contactIcons button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+#contactIcons button:hover {
+  transform: scale(1.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores de cada botón */
+#contactIcons button .bi-whatsapp {
+  color: white;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactIcons button .bi-linkedin {
+  color: white;
+  background-color: #0077b5;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactIcons button .bi-envelope {
+  color: white;
+  background-color: #d44638;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactIcons a {
+  text-decoration: none;
 }

@@ -54,12 +54,19 @@ export const rubrosData = {
       se encuentra dentro del territorio nacional o en cualquier parte del mundo. Aseguramos una entrega precisa y puntual, 
       completando el ciclo de su cadena de valor.`
     ],
+    mision: `Conectar eficientemente la producción con el consumo a través de soluciones logísticas integrales. 
+    Gestionamos el transporte, almacenamiento y distribución de todo tipo de bienes con máxima seguridad y puntualidad, 
+    operando a través de una red multimodal (terrestre, aérea, marítima y fluvial) para ser el socio confiable que garantiza 
+    que la cadena de valor de nuestros clientes nunca se detenga.`,
+    vision: `Ser los arquitectos de la logística del futuro: una red inteligente, sostenible y resiliente que impulse el comercio y el 
+    desarrollo social. Aspiramos a un mundo donde la distancia no sea una barrera, sino una conexión, facilitando el acceso equitativo 
+    a bienes y oportunidades para todos y contribuyendo a un planeta más limpio a través de operaciones de bajo impacto ambiental.`,
     fraseMotivacional: `Confíe en NG DYNAMIC para una gestión logística sin fisuras. Contáctenos para 
     diseñar un plan a la medida de sus operaciones.`
   },
 
-  mantenimiento: {
-    tab: "Mantenimiento",
+  servicios: {
+    tab: "Servicios Generales",
     titulo: "Limpieza, mantenimiento y servicios generales",
     imagenesA: [mantenimiento1, mantenimiento2, mantenimiento3],
     imagenesB: [mantenimiento4, mantenimiento5, mantenimiento6],
@@ -79,6 +86,14 @@ export const rubrosData = {
       `Gestión de Residuos: Manejo ecológico y responsable de residuos industriales.`,
       `Catering: Opciones de alimentación y refrigerios para su equipo.`
     ],
+    mision: `Garantizar la salud, seguridad y funcionalidad de todo tipo de infraestructuras —públicas, privadas e industriales— 
+    a través de servicios expertos de limpieza, saneamiento ambiental y mantenimiento integral. Aplicamos los más altos estándares 
+    de calidad y personal técnico especializado para crear y conservar entornos impecables que protejan activamente el bienestar 
+    de las personas y preserven el valor de los activos de nuestros clientes.`,
+    vision: `Ser pioneros en la creación de entornos que promuevan activamente la salud y el bienestar. Aspiramos a un futuro donde 
+    los espacios de trabajo y convivencia sean ecosistemas inteligentes y sostenibles, mantenidos con tecnologías de bajo impacto 
+    ambiental y protocolos que garanticen la máxima higiene, convirtiéndonos en un pilar fundamental para la salud pública y la 
+    calidad de vida de las futuras generaciones.`,
     fraseMotivacional: `Confíe en NG DYNAMIC para asegurar la excelencia operativa de sus instalaciones. 
     Contáctenos para una evaluación y presupuesto a su medida.`
   },
@@ -106,6 +121,8 @@ export const rubrosData = {
       `Formación Financiera: Diseñamos y dictamos cursos de capacitación a medida para fortalecer las competencias 
       financieras de sus equipos.`
     ],
+    mision: `Capacitar a las empresas para tomar decisiones informadas y lograr un crecimiento sostenible`,
+    vision: `Ser el referente nacional en consultoría estratégica para empresas.`,
     fraseMotivacional: `Permita que nuestra experiencia impulse su visión. Contáctenos para una consulta inicial.`
   },
 
@@ -130,12 +147,16 @@ export const rubrosData = {
       `Logística Integrada: Nuestra propia red de transporte y almacenamiento garantiza la entrega segura y a tiempo de todos nuestros 
       productos, donde sea que los necesite.`
     ],
+    mision: `Acompañar al productor con productos de calidad, asesoramiento técnico y logística confiable para optimizar 
+    la salud y el rendimiento de sus animales.`,
+    vision: `Ser el socio estratégico de confianza para los productores en toda Argentina. Buscamos ser un pilar en la nutrición 
+    animal, contribuyendo al éxito y la rentabilidad del sector.`,
     fraseMotivacional: `Elija una nutrición que entiende su negocio. Elija NG DYNAMIC.`
   },
 
   agropecuaria: {
     tab: "Agropecuaria",
-    titulo: "Agropecuaria, Sin Límites. Lo Hacemos Realidad",
+    titulo: "Agropecuaria, Sin límites. Lo hacemos realidad",
     imagenesA: [agropecuaria1, agropecuaria2, agropecuaria3],
     imagenesB: [agropecuaria4, agropecuaria5, agropecuaria6],
     descripcion: `En NG DYNAMIC, transformamos el potencial de su campo en oportunidades globales. Ya sea que necesite los mejores 
@@ -154,6 +175,13 @@ export const rubrosData = {
       `Insumos de Primera: Le proveemos de todo lo necesario: semillas, fertilizantes, agroquímicos y productos de alimentación.`,
       `Manejo Post-Cosecha: Nos encargamos del acopio, almacenamiento, secado y clasificación de sus cereales y oleaginosas.`
     ],
+    mision: `Impulsar la productividad y sostenibilidad agrícola mediante soluciones integrales en manejo de cultivos, fertilización, 
+    riego y control fitosanitario. Trabajamos junto a los productores para maximizar los rendimientos y la calidad de los productos, 
+    incorporando tecnologías innovadoras y prácticas amigables con el medio ambiente, asegurando que cada cosecha sea eficiente, 
+    rentable y respetuosa del entorno.`,
+    vision: `Ser líderes en innovación agronómica, promoviendo una agricultura sostenible, inteligente y resiliente que garantice 
+    alimentos de calidad para las generaciones presentes y futuras. Aspiramos a un sector agrícola que combine productividad, 
+    cuidado ambiental y desarrollo social, fomentando comunidades rurales fuertes y un planeta más saludable.`,
     fraseMotivacional: `Hablenos de su proyecto. En NG DYNAMIC, estamos listos para hacerlo crecer.`
   }
 };

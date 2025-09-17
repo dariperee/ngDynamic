@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { rubrosData } from "../rubrosData.js";
 import FadeSlider from "./FadeSlider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/rubro.css";
 
 const Rubro = () => {
@@ -48,8 +49,41 @@ const Rubro = () => {
           )}
         </div>
       </section>
+      <div id="misionYvision">
+        <h2>Nuestra misión:</h2>
+        <p>{data.mision}</p>
+        <h2>Nuestra visión:</h2>
+        <p>{data.vision}</p>
+      </div>
       <div id="fraseMotivacional">
         <h2>{data.fraseMotivacional}</h2>
+        <div id="contactIcons">
+          <a
+            href="https://www.linkedin.com/company/ngdynamic/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>
+              <i className="bi bi-linkedin"></i>
+            </button>
+          </a>
+
+          <a href="mailto:Gerenciageneral@ngdynamic.com?subject=Solicito información&body=Hola, quería consultar información acerca de...">
+            <button>
+              <i className="bi bi-envelope"></i>
+            </button>
+          </a>
+
+          <a
+            href="https://wa.me/5491172380483" // tu WhatsApp
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>
+              <i className="bi bi-whatsapp"></i>
+            </button>
+          </a>
+        </div>
       </div>
     </section>
   );
