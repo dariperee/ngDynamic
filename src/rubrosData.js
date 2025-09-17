@@ -5,12 +5,12 @@ import logistica4 from "./assets/rubros-images/logistica/logistica4.jpg";
 import logistica5 from "./assets/rubros-images/logistica/logistica5.jpg";
 import logistica6 from "./assets/rubros-images/logistica/logistica6.jpg";
 
-import limpieza1 from "./assets/rubros-images/limpieza/limpieza1.jpg"; // Limpieza images
-import limpieza2 from "./assets/rubros-images/limpieza/limpieza2.jpg";
-import limpieza3 from "./assets/rubros-images/limpieza/limpieza3.jpg";
-import limpieza4 from "./assets/rubros-images/limpieza/limpieza4.jpg";
-import limpieza5 from "./assets/rubros-images/limpieza/limpieza5.jpg";
-import limpieza6 from "./assets/rubros-images/limpieza/limpieza6.jpg";
+import mantenimiento1 from "./assets/rubros-images/mantenimiento/mantenimiento1.jpg"; // Limpieza images
+import mantenimiento2 from "./assets/rubros-images/mantenimiento/mantenimiento2.jpg";
+import mantenimiento3 from "./assets/rubros-images/mantenimiento/mantenimiento3.jpg";
+import mantenimiento4 from "./assets/rubros-images/mantenimiento/mantenimiento4.jpg";
+import mantenimiento5 from "./assets/rubros-images/mantenimiento/mantenimiento5.jpg";
+import mantenimiento6 from "./assets/rubros-images/mantenimiento/mantenimiento6.jpg";
 
 export const rubrosData = {
   logistica: {
@@ -34,10 +34,10 @@ export const rubrosData = {
     ]
   },
 
-  limpieza: {
+  mantenimiento: {
     titulo: "Limpieza, mantenimiento y servicios generales",
-    imagenesA: [limpieza1, limpieza2, limpieza3],
-    imagenesB: [limpieza4, limpieza5, limpieza6],
+    imagenesA: [mantenimiento1, mantenimiento2, mantenimiento3],
+    imagenesB: [mantenimiento4, mantenimiento5, mantenimiento6],
     descripcion: `El entorno de trabajo impacta directamente en la productividad, la seguridad y la imagen de su empresa. En NG DYNAMIC, 
     nos dedicamos a crear, mantener y proteger sus espacios para que su equipo pueda dar lo mejor de sí y sus clientes perciban la 
     calidad en cada detalle. Delegue la gestión de sus instalaciones en un solo proveedor confiable y descubra la tranquilidad de 
