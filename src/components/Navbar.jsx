@@ -38,19 +38,19 @@ const Navbar = () => {
         <div className="dropdown">
           <button>Rubros</button>
           <div className="dropdownContent">
-            <Link to="/logistica" className="navLink">
+            <Link to="/rubros/logistica" className="navLink">
               <button>Logística</button>
             </Link>
-            <Link to="/mantenimiento" className="navLink">
+            <Link to="/rubros/mantenimiento" className="navLink">
               <button>Limpieza y Mantenimiento</button>
             </Link>
-            <Link to="/consultoria" className="navLink">
+            <Link to="/rubros/consultoria" className="navLink">
               <button>Consultoría</button>
             </Link>
-            <Link to="/nutricion" className="navLink">
+            <Link to="/rubros/nutricion" className="navLink">
               <button>Nutrición Animal</button>
             </Link>
-            <Link to="/agroexportacion" className="navLink">
+            <Link to="/rubros/agroexportacion" className="navLink">
               <button>Agropecuaria y Exportación</button>
             </Link>
           </div>

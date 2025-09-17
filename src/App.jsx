@@ -25,12 +25,7 @@ function App() {
             <Route path="/" element={<Hero />} />
             <Route path="/nosotros" element={<About />} />
             <Route path="/contacto" element={<Contact />} />
-
-            <Route path="/logistica" element={<Rubro />} />
-            <Route path="/mantenimiento" element={<Rubro />} />
-            <Route path="/consultoria" element={<Rubro />} />
-            <Route path="/nutricion" element={<Rubro />} />
-            <Route path="/agroexportacion" element={<Rubro />} />
+            <Route path="/rubros/:id" element={<Rubro />} />
           </Routes>
         </main>
         <Footer />

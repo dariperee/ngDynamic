@@ -1,13 +1,35 @@
-#rubrosIndividuales {
-  display: flex;
-  flex-direction: column;
+#rubroPage {
+  background: linear-gradient(to bottom, rgba(38, 122, 248, 0.219), rgba(255, 255, 255, 0.596));
 }
 
-#rubroMain {
+#rubroPage h1 {
+  color: rgba(12, 77, 255, 0.781);
+  font-size: 3.2rem;
+  text-align: start;
+}
+
+#rubroPage h2 {
+  color: rgba(12, 77, 255, 0.781);
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+#rubroPage p {
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  text-align: start;
+}
+
+#rubroPage li {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  text-align: start;
+}
+
+#rubroA {
   display: flex;
-  align-items: center; /* centra verticalmente texto y slider */
-  justify-content: space-between;
-  padding: 4rem;
+  align-items: center;
+  padding: 3rem;
   gap: 1rem;
 }
 
@@ -15,11 +37,29 @@
   flex: 1;
 }
 
-#rubroSlider {
+#rubroB {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+.rubroInfoB {
+  max-width: auto;
+  padding: 1rem;
+}
+
+.rubroInfo img {
+  max-width: 7rem;
+}
+
+.rubroSliderA {
   flex: 1;
   max-width: 500px;
 }
 
-#rubroData {
-  padding: 1rem;
+.rubroSliderB {
+  flex: 1;
+  min-width: 500px;
 }
