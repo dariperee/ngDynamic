@@ -50,8 +50,8 @@ const Navbar = () => {
             <Link to="/rubros/nutricion" className="navLink">
               <button>Nutrición Animal</button>
             </Link>
-            <Link to="/rubros/agroexportacion" className="navLink">
-              <button>Agropecuaria y Exportación</button>
+            <Link to="/rubros/agropecuaria" className="navLink">
+              <button>Agropecuaria</button>
             </Link>
           </div>
         </div>

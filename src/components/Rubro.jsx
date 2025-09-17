@@ -7,13 +7,11 @@ import "../styles/rubro.css";
 const Rubro = () => {
   const { id } = useParams();
   const data = rubrosData[id];
-
-  // Estado opcional de "cargando" por si luego agregas fetch
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
     if (data) {
-      document.title = `${data.titulo} | NG Dynamic`;
+      document.title = `${data.tab} | NG Dynamic`;
       setReady(true);
     }
   }, [data]);
@@ -50,6 +48,9 @@ const Rubro = () => {
           )}
         </div>
       </section>
+      <div id="fraseMotivacional">
+        <h2>{data.fraseMotivacional}</h2>
+      </div>
     </section>
   );
 };

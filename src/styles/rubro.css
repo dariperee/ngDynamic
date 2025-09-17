@@ -63,3 +63,16 @@
   flex: 1;
   min-width: 500px;
 }
+
+#fraseMotivacional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+#fraseMotivacional h2 {
+  text-align: center;
+  color: rgba(12, 77, 255, 0.836);
+  text-shadow: 1rem;
+}
