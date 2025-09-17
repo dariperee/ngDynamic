@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link to="/rubros/logistica" className="navLink">
               <button>Logística</button>
             </Link>
-            <Link to="/rubros/mantenimiento" className="navLink">
+            <Link to="/rubros/limpieza" className="navLink">
               <button>Limpieza y Mantenimiento</button>
             </Link>
             <Link to="/rubros/consultoria" className="navLink">
