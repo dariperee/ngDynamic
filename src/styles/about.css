@@ -1,0 +1,30 @@
+#aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+#aboutVid {
+  flex: 1;
+}
+
+#aboutVid video {
+  width: 38rem;
+}
+
+#aboutTxt {
+  flex: 1;
+}
+
+#aboutTxt h1 {
+  color: #0c4dffd2;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#aboutTxt p {
+  text-align: center;
+  color: #333;
+}

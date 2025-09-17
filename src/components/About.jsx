@@ -1,24 +1,34 @@
 import { useEffect } from "react";
+import "../styles/about.css";
+import aboutVid from "../assets/about-us/about-vid.mp4";
 
-const About = () =>{
+const About = () => {
+  useEffect(() => {
+    document.title = "Sobre Nosotros | NG Dynamic";
+  }, []);
 
-    useEffect(() => {document.title = "Sobre Nosotros | NG Dynamic";}, []);
+  return (
+    <>
+      <section id="aboutUs">
+        <div id="aboutTxt">
+          <h1>Sobre nosotros</h1>
+          <p>
+            En NG Dynamic, nuestra filosofía empresarial se cimienta en un propósito claro: mejorar
+            la calidad de vida de la comunidad a través de servicios que generan un impacto positivo
+            y duradero. Cada una de nuestras acciones es guiada por un inquebrantable respeto al
+            prójimo, fomentando relaciones basadas en la integridad y la empatía con nuestros
+            clientes, colaboradores y la sociedad en su conjunto. Este compromiso es inseparable de
+            nuestra responsabilidad con el cuidado del medio ambiente, integrando la sostenibilidad
+            como un pilar transversal en todas nuestras operaciones para construir un futuro más
+            próspero y saludable para las generaciones venideras.
+          </p>
+        </div>
+        <div id="aboutVid">
+          <video src={aboutVid} autoPlay loop muted playsInline />
+        </div>
+      </section>
+    </>
+  );
+};
 
-    return(<>
-        <h2>Sobre nosotros</h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed, ultricies malesuada risus neque odio pharetra justo ante, 
-            facilisis phasellus cras euismod curae dictum potenti. Lobortis dis nisi nam ultrices aptent, feugiat tellus condimentum 
-            tempor porttitor in, magna vehicula euismod facilisis. Auctor rhoncus pulvinar varius luctus mauris pellentesque consequat 
-            dui diam, nunc ligula massa mi at purus leo netus ridiculus tristique, vehicula in ut placerat cubilia faucibus donec 
-            feugiat.
-
-        Magna sollicitudin nam primis purus gravida mus suspendisse dis montes, aliquam euismod vel tincidunt lectus ullamcorper 
-        egestas per, porttitor praesent nec aenean mollis facilisis neque sagittis. Facilisi sed suspendisse in habitant commodo 
-        nulla nisl cursus, sollicitudin metus massa molestie blandit porta volutpat tempor ante, fermentum montes platea sodales 
-        est ultrices nunc. Maecenas posuere cum facilisi in taciti euismod tempus, luctus velit purus montes nostra mauris, 
-        pretium primis condimentum porttitor iaculis tristique.</p>
-    </>)
-}
-
-export default About
+export default About;
