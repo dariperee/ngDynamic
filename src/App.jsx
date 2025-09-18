@@ -39,6 +39,7 @@ function AnimatedRoutes() {
       initial="initial"
       animate="animate"
       exit="exit"
+      onAnimationStart={() => window.scrollTo({ top: 0, behavior: "smooth" })} // Scroll al top cuando inicia la animación
     >
       <motion.div variants={itemVariants} transition={{ duration: 0.5 }}>
         <Component />
@@ -61,7 +62,6 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router>
-      <Scroll />
       <ScrollToTopButton />
       <div className="app">
         <Navbar />
