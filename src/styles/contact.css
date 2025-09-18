@@ -1,0 +1,92 @@
+/* Imagen y overlay */
+#contactImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 30rem;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+#contactImg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay sombreado */
+#contactImg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.562);
+  z-index: 1;
+}
+
+/* Texto centrado */
+.overlayText {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlayText h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlayText p {
+  font-size: 1.2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+#contactForm {
+  display: flex;
+  justify-content: center;
+  position: relative; /* necesario para que el ::before se posicione relativo al contenedor */
+  padding: 3rem;
+}
+
+#contactForm::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; left:0; right:0; bottom:0 */
+  background: linear-gradient(to bottom, rgba(38, 122, 248, 0.151), rgba(255, 255, 255, 0));
+  z-index: 2; /* encima de los hijos */
+  pointer-events: none; /* importante para que los botones/inputs sigan siendo clicables */
+}
+
+#form {
+  flex: 1;
+  position: relative;
+  z-index: 1; /* debajo del gradiente */
+}
+
+#data {
+  flex: 1;
+  position: relative;
+  z-index: 1; /* debajo del gradiente */
+}
+
+#dataIcon {
+  padding: 2rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#dataIcon p {
+  font-size: 0.8rem;
+  padding-top: 1.2rem;
+  text-align: start;
+  line-height: 1rem;
+  color: #333;
+}

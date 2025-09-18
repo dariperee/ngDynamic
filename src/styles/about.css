@@ -21,10 +21,10 @@
 #aboutTxt h1 {
   color: #0c4dffd2;
   font-size: 1.4rem;
-  text-align: center;
+  text-align: start;
 }
 
 #aboutTxt p {
-  text-align: center;
+  text-align: start;
   color: #333;
 }
