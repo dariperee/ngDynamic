@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Scroll from "./components/Scroll";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Rubro from "./components/Rubro";
 
