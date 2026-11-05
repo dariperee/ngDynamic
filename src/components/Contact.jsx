@@ -11,7 +11,7 @@ const Contact = () => {
 
   return (
     <>
-      {/* Contenedor solo de imagen con overlay y texto */}
+      {/* Contenedor de imagen con overlay y texto */}
       <section id="contactImg">
         <img src={background} alt="background" />
         <div className="overlayText">
@@ -44,11 +44,7 @@ const Contact = () => {
                 </button>
               </a>
 
-              <a
-                href="https://wa.me/5491172380483" // tu WhatsApp
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://wa.me/5491172380483" target="_blank" rel="noopener noreferrer">
                 <button>
                   <i className="bi bi-whatsapp"></i>
                 </button>

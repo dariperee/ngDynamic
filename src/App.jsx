@@ -33,7 +33,7 @@ function AnimatedRoutes() {
   // Función para envolver cada página
   const wrapPage = (Component, key) => (
     <motion.div
-      key={key} // ⚡ clave para que animate entre rubros
+      key={key}
       variants={containerVariants}
       initial="initial"
       animate="animate"

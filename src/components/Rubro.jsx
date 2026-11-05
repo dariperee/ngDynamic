@@ -74,11 +74,7 @@ const Rubro = () => {
             </button>
           </a>
 
-          <a
-            href="https://wa.me/5491172380483" // tu WhatsApp
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://wa.me/5491172380483" target="_blank" rel="noopener noreferrer">
             <button>
               <i className="bi bi-whatsapp"></i>
             </button>

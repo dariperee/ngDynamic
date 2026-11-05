@@ -22,7 +22,7 @@ export default function ParallaxSlider() {
         parallax={true}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         modules={[Parallax, Pagination, Navigation, Autoplay]}
-        pagination={{ clickable: true }} // <--- esto agrega los bullets
+        pagination={{ clickable: true }} // <--- bullets
         className="mySwiperParallax"
       >
         {/* Slide 1 */}
